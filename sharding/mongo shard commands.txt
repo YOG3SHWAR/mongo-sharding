@@ -1,0 +1,5 @@
+db.mov2.getShardDistribution()
+
+sh.enableSharding("dbname")
+
+sh.shardCollection("sharddemo.mov2", {"_id": "hashed"})
